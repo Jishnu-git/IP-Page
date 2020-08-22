@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="index.js"></script>
+  </head>
+<body>
+    <div class="container-fluid main-header">
+        <h1 class="text-center text-light" style="padding-top: 12vh;">Project Title Here</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-black sticky-top pt-3 pb-0" id="navbar">
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item px-5 pb-3" id="OverviewLi">
+                    <a class="nav-link" id="OverviewLink">Overview</a>
+                </li>
+                <li class="nav-item px-5 pb-3" id="ExistingLi">
+                  <a class="nav-link" id="ExistingLink">Existing Works</a>
+                </li>
+                <li class="nav-item px-5 pb-3" id="GoalsLi">
+                  <a class="nav-link" id="GoalsLink">Our Vision</a>
+                </li>
+                <li class="nav-item px-5 pb-3" id="DevsLi">
+                  <a class="nav-link" id="DevsLink">Project Members</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-2 bg-white py-4" id="Overview">
+      <h2 class="text-center">Overview</h2>
+    </div>
+    <div class="container-flex py-2" id="OverviewBg">
+      <div class="jumbotron bg-white mx-auto mb-0" style="width: 85vw">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus debitis nemo quae eveniet in, cupiditate dignissimos! Eligendi, voluptatem reiciendis nemo sit, aperiam commodi, fugit quisquam doloribus necessitatibus sunt quibusdam quas!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laudantium, recusandae tenetur molestias animi delectus repellendus hic natus quis ut unde at, sunt atque dolor sed possimus a accusantium voluptatem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam aliquid, fugit saepe nesciunt repellendus dolores unde repudiandae vitae error magni earum. Molestiae nisi exercitationem blanditiis laborum quam? Officiis, qui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores repudiandae ut dolores, cumque dignissimos officiis, nesciunt magni nobis soluta doloribus dolorum, consectetur iusto nihil dicta numquam. Beatae, tenetur obcaecati!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio amet et magni est. Blanditiis dicta eos odio illum quo, officiis iusto dignissimos deleniti vitae, ducimus nam dolorem quas error repellendus?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid bg-white py-4" id="Existing">
+      <h2 class="text-center">Existing Works</h2>
+    </div>
+    <div class="container-flex py-2" id="ExistingBg">
+      <div class="jumbotron bg-white mx-auto mb-0" style="width: 85vw">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus debitis nemo quae eveniet in, cupiditate dignissimos! Eligendi, voluptatem reiciendis nemo sit, aperiam commodi, fugit quisquam doloribus necessitatibus sunt quibusdam quas!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laudantium, recusandae tenetur molestias animi delectus repellendus hic natus quis ut unde at, sunt atque dolor sed possimus a accusantium voluptatem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam aliquid, fugit saepe nesciunt repellendus dolores unde repudiandae vitae error magni earum. Molestiae nisi exercitationem blanditiis laborum quam? Officiis, qui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores repudiandae ut dolores, cumque dignissimos officiis, nesciunt magni nobis soluta doloribus dolorum, consectetur iusto nihil dicta numquam. Beatae, tenetur obcaecati!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio amet et magni est. Blanditiis dicta eos odio illum quo, officiis iusto dignissimos deleniti vitae, ducimus nam dolorem quas error repellendus?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid bg-white py-4" id="Goals">
+      <h2 class="text-center">Our Vision</h2>
+    </div>
+    <div class="container-flex py-2" id="GoalsBg">
+      <div class="jumbotron bg-white mx-auto mb-0" style="width: 85vw">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus debitis nemo quae eveniet in, cupiditate dignissimos! Eligendi, voluptatem reiciendis nemo sit, aperiam commodi, fugit quisquam doloribus necessitatibus sunt quibusdam quas!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laudantium, recusandae tenetur molestias animi delectus repellendus hic natus quis ut unde at, sunt atque dolor sed possimus a accusantium voluptatem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam aliquid, fugit saepe nesciunt repellendus dolores unde repudiandae vitae error magni earum. Molestiae nisi exercitationem blanditiis laborum quam? Officiis, qui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores repudiandae ut dolores, cumque dignissimos officiis, nesciunt magni nobis soluta doloribus dolorum, consectetur iusto nihil dicta numquam. Beatae, tenetur obcaecati!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio amet et magni est. Blanditiis dicta eos odio illum quo, officiis iusto dignissimos deleniti vitae, ducimus nam dolorem quas error repellendus?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid bg-white py-4" id="Devs">
+      <h2 class="text-center">Members</h2>
+    </div>
+    <div class="container-flex py-2" id="DevsBg">
+      <div class="container my-5 bg-transparent">
+        <div class="row">
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+          <div class="col-4 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <figure>
+              <img src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+              <figcaption>Developer</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>  
+</body>
+</html>

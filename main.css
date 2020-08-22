@@ -1,0 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5f5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-header {
+    height: 30vh;
+    background: linear-gradient(#2E8B57, #20B2AA);
+}
+
+.bg-black {
+    background-color: transparent;
+    background: linear-gradient(#000000, #000000);
+    transition: all 0.5s;
+}
+
+.bg-green {
+    background-color: transparent;
+    background: linear-gradient(to right top, #2E8B57, #20B2AA);
+    transition: all 0.5s;
+    color: white;
+}
+
+.bg-green-topdown {
+    background-color: transparent;
+    background: linear-gradient(to bottom, #2E8B57, #20B2AA);
+    transition: all 0.5s;
+}
+
+.bg-trans {
+    background-color: transparent;
+    transition: all 0.5s;
+    border-radius: 17.5px 17.5px 0px 0px;
+}
+
+.bg-cur {
+    background-color: white;
+    color: black!important;
+    border-radius: 17.5px 17.5px 0px 0px;
+    transition: all 0.5s;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-item {
+    margin: 0px 3vw;
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+figure:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+figure {
+    transition: all 0.5s;
+}
