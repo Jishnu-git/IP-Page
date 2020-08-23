@@ -17,6 +17,12 @@ body {
     background: linear-gradient(#2E8B57, #20B2AA);
 }
 
+h1 a, h1 a:active, h1 a:focus, h1 a:hover {
+    color: inherit!important;
+    outline: none!important;
+    text-decoration: none!important;
+}
+
 .bg-black {
     background-color: transparent;
     background: linear-gradient(#000000, #000000);
@@ -58,17 +64,48 @@ body {
     color: white;
 }
 
-img {
+.row img {
     border-radius: 50%;
     width: 10vw;
     transition: all 0.5s;
 }
 
-figure:hover {
+.row  figure:hover {
     transform: scale(1.2);
     transition: all 0.5s;
 }
 
-figure {
+.row figure {
     transition: all 0.5s;
 }
+
+.header-image {
+    width: 15vw;
+    border: 10px solid white;
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
+.main-info {
+    width: 80vw;
+    margin-bottom: 10vh;
+    padding-top: 7.5vw;
+    padding-bottom: 10vh;
+}
+
+.main-info .container-fluid, .main-info a {
+    font-size: 25px;
+}
+
+.main-info p {
+    font-size: large;
+}
+
+.main-nav {
+    height: 0;
+    width: 80vw;
+    margin-top: 10vh;
+    transform: translateY(300%);
+    font-size: 20px;
+}
+
