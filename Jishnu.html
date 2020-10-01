@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jishnu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent mx-auto px-3 main-nav">
+        <a class="navbar-brand text-white" href="index.html">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item dropdown ml-auto mr-0">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Members
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid main-header text-center" style="width: 80vw;">
+        <img class="header-image" src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+    </div>    
+    <div class="jumbotron-fluid bg-white mx-auto px-5 main-info">
+        <h1 class="text-center">Jishnu</h1>
+        <h2 class="text-center mt-5 py-4 bg-green">Social</h2>
+        <div class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-6 text-center mt-3">
+                    <strong>Email: </strong> jishnu.2018@vitstudent.ac.in
+                </div>
+                <div class="col-6 text-center my-3">
+                    <strong>Github: </strong> <a href="https://github.com/Jishnu-git">jishnu-git</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center py-4 bg-green">Domain Selected</h2>
+        <h5 class="display-4 text-center">Google Cloud Vision</h5>
+        <p class="py-4">
+            Google Vision, or Cloud Vision, is an API provided by Google that performs many different image recognition work like OCR, face recognition, object detection, monument recognition and well-known face detection. This API actually works through Google Cloud, the trained model resides on Google’s servers and the image has to be sent to the servers through http requests or REST APIs and the result will be a response from the server.
+        </p>
+
+        <h5 class="display-4 text-center">Objective</h5>
+        <p class="py-4">
+            Google Vision offers many different functions for each of the different features it offers. The main objective is to find out the different areas that the Vision API’s model fails, analyze them and solve them through application of various image processing concepts in order to enhance the final output’s correctness. The main focus is on OCR, face recognition and object labelling.
+        </p>
+        <h2 class="text-center py-4 bg-green">Completed Work</h2>
+        <h5 class="display-4 text-center mb-4">Text Recognition (OCR)</h5>
+        <p class="py-4">
+            Optical Character Recognition, or OCR, is the conversion of images of typed or handwritten text to machine encoded text. Google Vision offers a single function to perform OCR and it works really well in almost all cases. Below you can see an example of the output of OCR function for an image that has mixed intensity, non-uniform depth and shadows – and the Vision API has no trouble recognizing the text.
+        </p>
+        <div class="row">
+            <div class="col-6">
+                <img class="sample-img" src="/Images/Jishnu/RoadSign1.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <img class="sample-img" src="/Images/Jishnu/RoadSignOp.png" alt="">
+            </div>
+        </div>
+        <h5 class="display-5 text-center my-4">Where The API Fails</h5>
+        <p class="py-4">
+            But this API does fail to detect text properly when there is a noise in the image. Whether the noise is present in the background or the foreground, in both cases the API struggles to give a correct output, anywhere from minor letter swaps at a few areas to a major error in the reading ability, even reading text when there is none in a few cases. Below are two images and the respective outputs for the same. The first image has a few letters misread while the second one has entire lines wrongly read and parts of the noise being recognised as text.
+        </p>
+        <div class="row">
+            <div class="col-6">
+                <img src="/Images/Jishnu/NoisyText1.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 my-auto">
+                <img src="/Images/Jishnu/NoisyText1Op.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 mt-4">
+                <img src="/Images/Jishnu/NoisyText2.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 my-auto">
+                <img src="/Images/Jishnu/NoisyText2Op.png" alt="" class="sample-img">
+            </div>
+        </div>
+        <h5 class="display-5 text-center my-4">Pre Processing To Get Better Results</h5>
+        <p class="py-4">
+            The objective is to write a function that enhances the output for images with such noisy backgrounds. After trying out mixes of several different approach to make the recognition perform better, I finally arrived at an optimal procedure. The idea is to make a mask for the image based on the entropy value, then apply a Gaussian smoothing filter over the image, and then crop the image by using the mask that was obtained and the to parse the masked image as a binary image. The same two images after undergoing the algorithm is shown below along with the respective outputs. The first image is now free of any mis-matched letters and the second image now has almost perfect text recognition. 
+        </p>
+        <div class="row">
+            <div class="col-6">
+                <img src="/Images/Jishnu/NoisyText1Enhanced.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 my-auto">
+                <img src="/Images/Jishnu/NoisyText1EnhancedOp.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 mt-4">
+                <img src="/Images/Jishnu/NoisyText2Enhanced.png" alt="" class="sample-img">
+            </div>
+            <div class="col-6 my-auto">
+                <img src="/Images/Jishnu/NoisyText2EnhancedOp.png" alt="" class="sample-img">
+            </div>
+            <div class="col-12 text-center">
+                The source code of this work can be found <a style="font-size: initial;" href="https://github.com/Jishnu-git/IP-Project/tree/master/Google%20Vision">here</a>.
+            </div>
+        </div>
+        <h2 class="text-center py-4 bg-green mt-4">Ongoing Work</h2>
+        <p class="py-4">
+            The initially set objectives will be continued; OCR has successfully been enhanced by pre-processing of the image to give better results for images it previously was not able to. Similar work will be carried out for face recognition and object identification, starting by detecting if any flaws exist, then figuring out what causes the problem and employing appropriate image pre-processing to fix them.
+        </p>
+    </div>
+</body>
+</html>
