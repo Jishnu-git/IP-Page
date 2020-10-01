@@ -64,7 +64,7 @@ h1 a, h1 a:active, h1 a:focus, h1 a:hover {
     color: white;
 }
 
-.row img {
+.dev-img {
     border-radius: 50%;
     width: 10vw;
     transition: all 0.5s;
@@ -109,3 +109,6 @@ h1 a, h1 a:active, h1 a:focus, h1 a:hover {
     font-size: 20px;
 }
 
+.sample-img {
+    width: 100%;
+}
