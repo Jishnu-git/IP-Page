@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M V Pranav</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent mx-auto px-3 main-nav">
+        <a class="navbar-brand text-white" href="index.html">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item dropdown ml-auto mr-0">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Members
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Jishnu.html">Jishnu</a>
+                <a class="dropdown-item" href="Adityan.html">Adityan Sunil</a>
+                <a class="dropdown-item" href="Harshaan.html">Harshaan</a>
+                <a class="dropdown-item" href="Alan.html">Alan Jeremiah</a>
+                <a class="dropdown-item" href="Sarchin.html">Sarchin</a>
+                <a class="dropdown-item" href="Divya.html">Divya Prackash</a>
+                <a class="dropdown-item" href="Raghav.html">Raghav</a>
+                <a class="dropdown-item" href="Shreyas.html">Shreyas</a>
+                <a class="dropdown-item" href="Gokul.html">Gokul</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid main-header text-center" style="width: 80vw;">
+        <img class="header-image" src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
+    </div>
+    <div class="jumbotron-fluid bg-white mx-auto px-5 main-info">
+        <h1 class="text-center">M V Pranav</h1>
+        <h2 class="text-center mt-5 py-4 bg-green">Social</h2>
+        <div class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-6 text-center mt-3">
+                    <strong>Email: </strong> pranavmvp@gmail.com
+                </div>
+                <div class="col-6 text-center mt-3">
+                    <strong>Github: </strong> <a href="https://github.com/pranavmvp">pranavmvp</a>
+                </div>
+                <div class="col-12 text-center my-3">
+                    <strong>Email: </strong> mv.pranav2018@vitstudent.ac.in
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center py-4 bg-green">Role in The Project</h2>
+        <p class="py-4">
+            Feature detection includes methods for computing abstractions of image information and making local decisions at every image point whether there is an image feature of a given type at that point or not. The resulting features will be subsets of the image domain, often in the form of isolated points, continuous curves or connected regions.
+            The terms corners and interest points are used somewhat interchangeably and refer to point-like features in an image, which have a local two dimensional structure.  Algorithms were then developed so that explicit edge detection was no longer required, for instance by looking for high levels of curvature in the image gradient.These points are frequently known as interest points, but the term "corner" is used by tradition.
+            <br>
+            Harris Corner Detector is a corner detection operator that is commonly used in computer vision algorithms to extract corners and infer features of an image.  Harris' corner detector takes the differential of the corner score into account with reference to direction directly, instead of using shifting patches for every 45 degree angles, and has been proved to be more accurate in distinguishing between edges and corners. Since then, it has been improved and adopted in many algorithms to preprocess images for subsequent applications.
+            <br>
+            In this project, the Harris method will be implemented manually and compared with an inbuilt function of OpenCV. Improvements and scope for better efficiency will be explored.
+        </p>
+
+        <h2 class="text-center py-4 bg-green">Completed Work</h2>
+        <p class="py-4">
+            The existing algorithm for the said method has been implemented in Python code. Corners of the resultant image are plotted with colored dots, which is done by scouting points in the image where there is a maximum change in intensity from its neighbours. Each step of the algo is manually coded and compared with an inbuilt function of OpenCV 'cornerHarris()'. The results of the inbuilt function and the maunally coded function can be compared and observed visually.
+        </p>
+        <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
+        <p class="py-4">
+             Harris corner detector is a widely used tool in Image processing and known for its efficiency. However, lots of scope for improvements have been identified over the years. An improvement involves the use of an 'adaptive' threshold, which is calculated as the difference between max and min gray values of the image. It reduces feature space complexity and computational time. Also newer algorithms have been proposed to increase the precision of plotting corners. These will be further explored and implemented.
+        </p>
+    </div>
+</body>
+</html>
