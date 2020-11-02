@@ -108,14 +108,82 @@
             <div class="col-6 my-auto">
                 <img src="Images/Jishnu/NoisyText2EnhancedOp.png" alt="" class="sample-img">
             </div>
+        </div>
+
+        <h5 class="display-5 text-center my-4">Another Area Where API Fails</h5>
+        <p class="py-4">And similar to noise and grain in the images, introducing any sort of motionblur to an completely renders it unreadable to Google Vision. Unlike the previous section, this kind of distortion makes the entire text unreadable and the API outputs nothing. Below are two images, one with artificially introduced motionblur to an otherwise well off image and the second is an actual image without any alterations done, the API fails to read the content of either of the images.</p>
+        <div class="row">
+            <div class="col-6">
+                <img class="sample-img" src="Images/Jishnu/RoadSign1.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <img class="sample-img" src="Images/Jishnu/BlurredRoadSign.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <img class="sample-img" src="Images/Jishnu/BlurryPlate1.jpg" alt="">
+            </div>
+        </div>
+
+        <h5 class="display-5 text-center my-4">Pre Processing To Remove Motion Blur</h5>
+        <p class="pt-4">
+            The primary objective is to remove the motionblur to an extent where the API is readable, the restoration need not be perfect as the API can read through a bit of noise, so a little loss in data is acceptable. For this purpose, I’ve used Wienner Transformation to deconvolve the blurred image and obtain an image without motion blur. 
+        </p>
+        <p class="py-2">
+            The Wienner Transformation works in the Fourier space, in order to apply this transformation, we’ll need to be able to estimate the function that caused the blur. The kernel that could apply a motion blur like the one seen in the image can be approximately reconstructed if we can get the angle. For this purpose, Hugh Transformation is used, once the angle is known, we can estimate the length of the kernel by simple bruteforcing. This restoration process incurs severe loss in data if the kernel is wrongly estimated, we can use this to our advantage when estimating the length of the kernel as the image would get clearer as we near the correct length, but will start to lose image if we overshoot it.
+        </p>
+        <p>
+            Once the kernel is estimated, all that is left to do is apply the Wienner Transformation, both the image and the kernel are converted to their Fourier Space equivalents and the kernel is padded with zeroes to match the image size. If F(u, v) is the true image and H(u, v) is the motionblur inducing kernel, then the blurred image, G(u, v) is given as 
+        </p>
+        <h5 class="display-5 text-center my-4">G(u, v) = F(u,v) * H(u, v) + [[noise ~ 0]]</h5>
+        <p>
+            For the purpose of this project, the noise component is ignored. The deconvolution requires the application of the inverse kernel, H’(u, v) in the same way to G(u, v). This H’(u, v) is calculated as 
+        </p>
+        <h5 class="display-5 text-center my-4">H’(u, v) =  conjugate(H(u, v)) / H<sup>2</sup>(u, v)</h5>
+        <p>
+            Applying this inverse motion blur kernel obtained by the Wienner Transformation method to the blurred image, we’ll be able to get back the original image, but with some loss of data. This loss of data can be seen in the form of black lines in the restored image, but the API is easily able to read these restored images
+        </p>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="Images/Jishnu/BlurredRoadSign.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredRoadSign.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/BlurredRoadSignOp.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-4">
+                <img src="Images/Jishnu/BlurryPlate1.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate1.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate1Op.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-4">
+                <img src="Images/Jishnu/BlurryPlate2.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate2.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate2Op.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-4">
+                <img src="Images/Jishnu/BlurryPlate3.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate3.jpg" alt="" class="sample-img">
+            </div>
+            <div class="col-4 my-auto">
+                <img src="Images/Jishnu/RestoredPlate3Op.jpg" alt="" class="sample-img">
+            </div>
             <div class="col-12 text-center">
                 The source code of this work can be found <a class="font-initial" href="https://github.com/Jishnu-git/IP-Project/tree/master/Google%20Vision">here</a>.
             </div>
         </div>
-        <h2 class="text-center py-4 bg-green mt-4">Ongoing Work</h2>
-        <p class="py-4">
-            The initially set objectives will be continued; OCR has successfully been enhanced by pre-processing of the image to give better results for images it previously was not able to. Similar work will be carried out for face recognition and object identification, starting by detecting if any flaws exist, then figuring out what causes the problem and employing appropriate image pre-processing to fix them.
-        </p>
     </div>
 </body>
 </html>
