@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,16 +61,30 @@
             <br>
             Harris Corner Detector is a corner detection operator that is commonly used in computer vision algorithms to extract corners and infer features of an image.  Harris' corner detector takes the differential of the corner score into account with reference to direction directly, instead of using shifting patches for every 45 degree angles, and has been proved to be more accurate in distinguishing between edges and corners. Since then, it has been improved and adopted in many algorithms to preprocess images for subsequent applications.
             <br>
-            In this project, the Harris method will be implemented manually and compared with an inbuilt function of OpenCV. Improvements and scope for better efficiency will be explored.
+            <u>In this project, the Harris method will be implemented manually and compared with an inbuilt function of OpenCV. Improvements and scope for better efficiency will be explored.</u>
         </p>
 
         <h2 class="text-center py-4 bg-green">Completed Work</h2>
         <p class="py-4">
-            The existing algorithm for the said method has been implemented in Python code. Corners of the resultant image are plotted with colored dots, which is done by scouting points in the image where there is a maximum change in intensity from its neighbours. Each step of the algo is manually coded and compared with an inbuilt function of OpenCV 'cornerHarris()'. The results of the inbuilt function and the maunally coded function can be compared and observed visually.
+            The existing algorithm for the said method has been studied and undetstood. Corners of the resultant image are plotted with colored dots, which is done by scouting points in the image where there is a maximum change in intensity from its neighbours. Since HarrisCorner is an inbuilt function in OpenCV, user does not have much control over its parameters. For this project, entire Harris Corner was manually coded, following the algo step by step.
+            <br>
+            <br>
+            Improvements made :
+            <li>Applying a Gaussian Filter to reduce Noise</li>
+            <li>Increasing Moving Window Size to 5x5 to re-iterate the corner points multiple times to minimize error.</li>
+            <li>User control over parameters such as intensity threshold value and 'k' value of Matrix.</li>
+            <li><u>Non-maximum suppresion algorithm implemented that prevents crowded corners by specifying a minimum plotting distance between any two corners. Distance threshold can be manually changed as per requirement.</u></li>
+
+            <br>
+            <br>
+            References :
+            <li>https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html</li>
+            <li>https://medium.com/data-breach/introduction-to-harris-corner-detector-32a88850b3f6</li>
+            <li>https://towardsdatascience.com/non-maximum-suppression-nms-93ce178e177c</li>
         </p>
         <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
         <p class="py-4">
-             Harris corner detector is a widely used tool in Image processing and known for its efficiency. However, lots of scope for improvements have been identified over the years. An improvement involves the use of an 'adaptive' threshold, which is calculated as the difference between max and min gray values of the image. It reduces feature space complexity and computational time. Also newer algorithms have been proposed to increase the precision of plotting corners. These will be further explored and implemented.
+             Harris corner detector is a widely used tool in Image processing and known for its efficiency. However, lots of scope for improvements have been identified over the years. An improvement involves the use of an 'adaptive' threshold, which is calculated as the difference between max and min gray values of the image. It reduces feature space complexity and computational time. Also newer algorithms have been proposed to increase the precision of plotting corners, including machine learning models and CUDA-based programs. These will be further explored.
         </p>
     </div>
 </body>
