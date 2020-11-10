@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyas Madhav</title>
+    <title>Shreyas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -20,14 +20,14 @@
                 Other Members
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Jishnu.html">Jishnu</a>
                 <a class="dropdown-item" href="Adityan.html">Adityan Sunil</a>
+                <a class="dropdown-item" href="Harshaan.html">Harshaan</a>
                 <a class="dropdown-item" href="Alan.html">Alan Jeremiah</a>
                 <a class="dropdown-item" href="Sarchin.html">Sarchin</a>
                 <a class="dropdown-item" href="Divya.html">Divya Prackash</a>
                 <a class="dropdown-item" href="Raghav.html">Raghav</a>
                 <a class="dropdown-item" href="Pranav.html">Pranav</a>
-                <a class="dropdown-item" href="Harshaan.html">Harshaan</a>
+                <a class="dropdown-item" href="Jishnu.html">Jishnu</a>
                 <a class="dropdown-item" href="Gokul.html">Gokul</a>
               </div>
             </li>
@@ -38,33 +38,106 @@
         <img class="header-image" src="https://t4.ftcdn.net/jpg/00/64/67/63/240_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="">
     </div>    
     <div class="jumbotron-fluid bg-white mx-auto px-5 main-info">
-        <h1 class="text-center">Shreyas Madhav</h1>
+        <h1 class="text-center">Shreyas Madhav A V</h1>
         <h2 class="text-center mt-5 py-4 bg-green">Social</h2>
         <div class="container-fluid bg-white">
             <div class="row">
                 <div class="col-6 text-center mt-3">
                     <strong>Email: </strong> shreyasmadhav.av2018@vitstudent.ac.in
                 </div>
-                <div class="col-6 text-center mt-3">
-                    <strong>Email: </strong> shreyas.madhav@gmail.com
-                </div>
-                <div class="col-12 text-center my-3">
-                    <strong>Linkedin: </strong> <a href="">Shreyas Madhav A V</a>
+                <div class="col-6 text-center my-3">
+                    <strong>Phone Number: </strong> 9566298278<a href=""></a>
                 </div>
             </div>
         </div>
-        <h2 class="text-center py-4 bg-green">Role in The Project</h2>
+        <h2 class="text-center py-4 bg-green">Domain Selected</h2>
+        <h5 class="display-4 text-center">Building CNN for Object Recognition</h5>
         <p class="py-4">
-           The goal is to predict accurate caption for a given image.To accomplish this, I'll use an attention-based model, which enables us to see what parts of the image the model focuses on as it generates a caption.The model architecture is similar to 'Show, Attend and Tell: Neural Image Caption Generation with Visual Attention'research paper.My goal is to try to understand its functioning and implement it.
+            .A Convolutional Neural Network (ConvNet/CNN) is a Deep Learning algorithm which can take in an input image, assign importance (learnable weights and biases) to various aspects/objects in the image and be able to differentiate one from the other. The pre-processing required in a ConvNet is much lower as compared to other classification algorithms. CNN image classifications takes an input image, process it and classify it under certain categories.The basic flow of the CNN is executed as follows:Provide input image into convolution layer
+Choose parameters, apply filters with strides, padding if requires. Perform convolution on the image and apply ReLU activation to the matrix.
+Perform pooling to reduce dimensionality size
+Add as many convolutional layers until satisfied
+Flatten the output and feed into a fully connected layer (FC Layer)
+Output the class using an activation function (Logistic Regression with cost functions) and classifies images.
         </p>
+        <img class="sample-img" src="Images\Shreyas\cnn.JPG" alt="">
+        <h5 class="display-4 text-center">Objective</h5>
+        <p class="py-4">
+            The main objective of this project is the explore the functioning of CNN by building a CNN without using a pretrained model,with dropout regularisation that uses the CIFAR-10 dataset for training and testing.
+        </p>
+        
         <h2 class="text-center py-4 bg-green">Completed Work</h2>
+        <h5 class="display-4 text-center mb-4">Working of the model</h5>
         <p class="py-4">
-            MS-COCO dataset download and preparation for training.Converted images to Inception V3 format.Initialize InceptionV3 and load the pretrained Imagenet weights.
+           We can develop this with five key elements. They are the loading of the dataset, the preparation of the dataset, the definition of the model, the evaluation of the model, and the presentation of results.
         </p>
-        <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
+        
+        <h5 class="display-5 text-center my-4">About the dataset: CIFAR-10</h5>
         <p class="py-4">
-            Ongoing work on Caching the features extracted from InceptionV3(max memory limit for this shows exceeded in Coab and should be run in GPU)Looking into it.
+            
+<b>CIFAR</b> is an acronym that stands for the 'Canadian Institute For Advanced Research' and the CIFAR-10 dataset was developed along with the CIFAR-100 dataset by researchers at the CIFAR institute.
+
+The dataset is comprised of 60,000 32×32 pixel color photographs of objects from 10 classes, such as frogs, birds, cats, ships, etc. The class labels and their standard associated integer values are listed below.
+
+0: airplane
+1: automobile
+2: bird
+3: cat
+4: deer
+5: dog
+6: frog
+7: horse
+8: ship
+9: truck
         </p>
+<img class="sample-img" src="Images\Shreyas\3.JPG" alt="">
+        
+        <h5 class="display-5 text-center my-4">Dropout Regularisation</h5>
+        <p class="py-4">
+            Dropout is a technique that will randomly drop nodes out of the network. It has a regularizing effect as the remaining nodes must adapt to pick-up the slack of the removed nodes.Dropout can be added to the model by adding new Dropout layers, where the amount of nodes removed is specified as a parameter. There are many patterns for adding Dropout to a model, in terms of where in the model to add the layers and how much dropout to use.
+
+In this case, we will add Dropout layers after each max pooling layer and after the fully connected layer, and use a fixed dropout rate of 25% (e.g. retain 75% of the nodes).
+        </p>
+<img class="sample-img" src="Images\Shreyas\2.JPG" alt="">
+        
+
+        <h5 class="display-5 text-center my-4">Process Flow</h5>
+        <p class="pt-4">
+            
+        </p>
+        <p class="py-2">
+           The CIFAR-10 dataset is loaded from the Keras library.the images are all pre-segmented (e.g. each image contains a single object), that the images all have the same square size of 32×32 pixels, and that the images are color. Therefore, we can load the images and use them for modeling almost immediately.there are 10 classes and that classes are represented as unique integers.
+
+We can, therefore, use a one hot encoding for the class element of each sample, transforming the integer into a 10 element binary vector with a 1 for the index of the class value. We can achieve this with the to_categorical() utility function.
+        </p>
+        <p>
+            A good starting point is to normalize the pixel values, e.g. rescale them to the range [0,1]. This involves first converting the data type from unsigned integers to floats, then dividing the pixel values by the maximum value.
+        </p>
+        <h5 class="display-5 text-center my-4">train_norm = train.astype('float32')</h5>
+<h5 class="display-5 text-center my-4">train_norm = train_norm / 255.0</h5>
+<h5 class="display-5 text-center my-4">test_norm = test.astype('float32')</h5>
+<h5 class="display-5 text-center my-4">test_norm = test_norm / 255.0</h5>
+        <p>
+            The architecture involves stacking convolutional layers with small 3×3 filters followed by a max pooling layer. Together, these layers form a block, and these blocks can be repeated where the number of filters in each block is increased with the depth of the network such as 32, 64, 128, 256 for the first four blocks of the model. Padding is used on the convolutional layers to ensure the height and width of the output feature maps matches the inputs.Dropout has been included at 25%
+        </p>
+       
+        <p>
+            After the model is defined, we need to fit and evaluate it.The test dataset can be used like a validation dataset and evaluated at the end of each training epoch. This will result in a trace of model evaluation scores on the train and test dataset each epoch that can be plotted later.Once the model has been evaluated, we can present the results.
+
+There are two key aspects to present: the diagnostics of the learning behavior of the model during training and the estimation of the model performance.
+
+First, the diagnostics involve creating a line plot showing model performance on the train and test set during training. These plots are valuable for getting an idea of whether a model is overfitting, underfitting, or has a good fit for the dataset.
+        </p>
+<img class="sample-img" src="Images\Shreyas\4.JPG" alt="">
+<img class="sample-img" src="Images\Shreyas\5.JPG" alt="">
+<img class="sample-img" src="Images\Shreyas\6.JPG" alt="">
+
+        <div class="row">
+           
+            <div class="col-12 text-center">
+                The source code of this work can be found <a class="font-initial" href="https://colab.research.google.com/drive/12XzpsvhM0R8m81w1iqMk5qfEPXBjfOf7">here</a>.
+            </div>
+        </div>
     </div>
 </body>
 </html>
