@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Jeremiah</title>
+    <title>Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -20,15 +20,15 @@
                 Other Members
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Jishnu.html">Jishnu</a>
-                <a class="dropdown-item" href="Adityan.html">Adityan Sunil</a>
-                <a class="dropdown-item" href="Harshaan.html">Harshaan</a>
-                <a class="dropdown-item" href="Sarchin.html">Sarchin</a>
-                <a class="dropdown-item" href="Divya.html">Divya Prackash</a>
-                <a class="dropdown-item" href="Raghav.html">Raghav</a>
-                <a class="dropdown-item" href="Pranav.html">Pranav</a>
-                <a class="dropdown-item" href="Shreyas.html">Shreyas</a>
-                <a class="dropdown-item" href="Gokul.html">Gokul</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
               </div>
             </li>
           </ul>
@@ -52,7 +52,7 @@
                     <strong>Email: </strong> alan.j.immanuel@gmail.com
                 </div>
                 <div class="col-6 text-center my-3">
-                    <strong>Linkedin: </strong> <a href="https://www.linkedin.com/in/alan-jeremiah-23ab94172/">alanjeremiah</a>
+                    <strong>Collab: </strong> <a href="https://colab.research.google.com/drive/1dvCXq5xRd7xlpcjSpRbViOmj4CNbO9Er?authuser=1#scrollTo=1Jj-QSUTCf0Y">alanjeremiah</a>
                 </div>
             </div>
         </div>
@@ -60,32 +60,106 @@
         <p class="py-4">
              Feature Extraction or Detection is a key concept in image processing, as these help the computer to find relation between images i.e find patterns in images. Typically any image contains lots of information, the image as a whole is the grouping of multiple smaller pieces of information, just like a puzzle in which the separate pieces are arranged to form a bigger picture. Identifying these small piece of information and learning what it is and finding related piece of information in other images is feature extraction and discription. In images objects can be identified by its edges, corners, or flat surface. SIFT or Scale Invariant Feature Transform is a feature detection algorithm, that helps in finding features in differnt scaled images and orientated images. This algorithm find keypoints in different scales for each octave (Image Pyramids) and scales and orients the keypoints so that these keypoints can help identigy the same object in multiple images. Pre processing the image before SIFT by applying filters, to better improve the feature extraction is the goal of this project. As a pre processed image reduces the much problem caused by the original image. pre processing results in better results.
         </p>
-        <h2 class="text-center py-4 bg-green">Completed Work</h2>
+        <h2 class="text-center py-4 bg-green">Image Pre-Processing for Feature Detection using SIFT</h2>
         <p class="py-4">
                
            In this project, the SIFT algorithm works on different resolution of the same images, which are image pyramids. A study on the working of image pyramids was done, in Image pyramids, for each octave the image is reduced to one fourth (M/2 and N/2) so going up the pyramid, the image is divided by four, going down the pyramid, we multiply by four. Image pyramids play a very important role in Image Classification models such as HOG, in which the model is trained on images at different scales so that at any resolution the object can be detected. A study on the working of SIFT algorithm is done, in which the image is scaled for different levels of sigma value for each octave and a well interest keypoint is detected (local extrema), then it is scaled and oriented and the keypints are stored in a vector. This keypoints indentified can be matched with other images.
-                
+     
         </p>
-        <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
+
+        <p style="text-align: center;">
+            <img src="https://i.ibb.co/BBhmxjJ/Image.jpg" alt="">
+        </p>  
+
         <p class="py-4">
-            Since SIFT algorithm works on local gradients, edges identification and noise removal is necessary, so that unwanted features are not detected. A Gaussian high pass filter or gaussian blur with edge detection can be done to pre process the image. Also the image should have a good contrast. Poorly contrast images results in poor feature detection. Histogram equalization can be done to improve the contrast, to better improve the image before feed to the SIFT algorithm. 
+            In the first set of images we see, Eiffel Tower present in everything. But the difference is the Tower is in
+            different scale and orientation. SIFT is a Feature Detection and Description method, which identifies the
+            key points in a image. These key points generated can be matched with another set of key points. This
+            allows the computer to recognize the same object in different scales. In the second picture, we see the
+            matching od key points in two different images. 
+            <br><br>   
+           We can also use the key points generated using SIFT as features for the image during model training. The
+            major advantage of SIFT features, over edge features or hog features, is that they are not affected by the
+            size or orientation of the image.
+            <br><br><br>
+                the entire process can be divided into 4 parts:
+            
+            
+       </p>     
+            
+
+               <ul>
+                <li><strong>Constructing a Scale Space:</strong> To make sure that features are scale-independent</li>
+                 <li><strong>Keypoint Localisation:</strong> Identifying the suitable features or keypoints</li>
+                 <li><strong>Orientation Assignment:</strong> Ensure the keypoints are rotation invariant</li>
+                 <li><strong>Keypoint Descriptor:</strong>  Assign a unique fingerprint to each keypoint</li>
+        </ul>
+        
+        <p class="py-4">
+        
+              <br>
+                For example, the following is an example of image executed with the sift function to compute the keypoints.
+                
+                The working of sift is explained <a href="https://github.com/alanjeremiah/ImageProcessing/blob/main/SIFT.pdf" style="font-size: 16px;" >here</a>
+              <br><br>
+                
+</p>
+
+    
+            
+            <p style="text-align: center;">
+                <img src="https://i.ibb.co/xGKkPJ8/Image2.jpg" alt="">
+            </p>
+    
+        <h2 class="text-center py-4 bg-green">Pre-Processing</h2>
+        <p class="py-4">
+            Since SIFT algorithm works on local gradients, edges identification and noise removal is necessary, so that unwanted features are not detected. A Gaussian high pass filter or gaussian blur with edge detection can be done to pre process the image. Also in working , the Sift uses DOG (Difference of Gaussian) which is similar to the laplacian of Gaussian. The output of this stage looks similar to that of an High Pass Filter. Even Gaussian blur with image sharpening can be done in the spatial domain.
+            <br><br>
+            
+            Explored Techniques
+            
+            <div>
+                <ul>
+                <li><strong>High Pass Filter:</strong> This filter removes noise with gaussian smoothing and then sharpens the images. This results with clear cut image (edge or outline). But the outcome of Sift showed less number of keypoints</li>
+                 <li><strong>Spatial Blur + Sharpening: </strong> The image is first Blurred and then Sharpened. This makes the image more brighter, and resulted in more number of keypoints</li>
+                 <li><strong>High Pass Filter + Spatial Blur + Sharpening :</strong> This combination produced a similar results as the one before/li>
+                    <li><strong>Spatial Blur + Sharpening + High Pass Filter:</strong>This Improved better to the only HPF method, but produces keypoints lesser than the Spatial Filters combined. But the results produces a decent number of keypoints.</li></ul>
+            </div>
+                <br>
+        <p class="py-4">
+            Inference, 
+                <br><br>
+                
+                Looking at the output of SIFT, we can see some keypoints located in the background(clear sky), If our aim is to just want the forground objects, those points are unnecessary. Technique 1 produces very minimal amount of points to train the model. But doesnt take the unnecessary points. Technique 2 regects the bad points but found more number of keypoints, which is useful as more keypoints to identify an object, but the con is too many points are so closely clubbed like a cluster of noise. The same happens to Technique 3. Technique 4 combination those produces minimal points compared to Technique 2 and 3, does an decent job, by providing enough points without cluster of noise to identify images. Technique 4 can be used to preprocess the image to improve the results of sift.
+                <br>
+                
+
 
         </p>
+            
+            <p style="text-align: center;">
+                <img src="https://i.ibb.co/Hzk1txn/Image3.jpg" alt="" width="900" height="500">
+            </p>
+        
+        <p style="text-align: center;">
+            The source code for this project can be found <a href="https://colab.research.google.com/drive/1dvCXq5xRd7xlpcjSpRbViOmj4CNbO9Er?authuser=1#scrollTo=1Jj-QSUTCf0Y" style="font-size: 16px; ">here</a>
+        </p>
+
         <h2 class="text-center py-4 bg-green">References</h2>
         <div class="text-center">
             <li>Image Pyramids</li>
-            <a class="font-initial" href="https://www.pyimagesearch.com/2015/03/16/image-pyramids-with-python-and-opencv/">image-pyramids-with-python-and-opencv</a> <br>
-            <a class="font-initial" href="https://www.youtube.com/watch?v=dW7sMgs-Ggw">Laplacian and Gaussian filter</a> <br>
-            <a class="font-initial" href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/">histogram-oriented-gradients-object-detection</a> <br>
-            <a class="font-initial" href="https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/">sliding-windows-for-object-detection-with-python-and-opencv</a> <br>
-            <a class="font-initial" href="https://www.researchgate.net/publication/330160982_PYRAMID_METHOD_IN_IMAGE_PROCESSING">PYRAMID_METHOD_IN_IMAGE_PROCESSING</a>
+            <a href="https://www.pyimagesearch.com/2015/03/16/image-pyramids-with-python-and-opencv/" style="font-size: 16px;">image-pyramids-with-python-and-opencv</a> <br>
+            <a href="https://www.youtube.com/watch?v=dW7sMgs-Ggw" style="font-size: 16px;">Laplacian and Gaussian filter</a> <br>
+            <a href="https://www.pyimagesearch.com/2014/11/10/histogram-oriented-gradients-object-detection/" style="font-size: 16px;">histogram-oriented-gradients-object-detection</a> <br>
+            <a href="https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/" style="font-size: 16px;">sliding-windows-for-object-detection-with-python-and-opencv</a> <br>
+            <a href="https://www.researchgate.net/publication/330160982_PYRAMID_METHOD_IN_IMAGE_PROCESSING" style="font-size: 16px;">PYRAMID_METHOD_IN_IMAGE_PROCESSING</a>
             
             <li>SIFT</li>
-            <a class="font-initial" href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_sift_intro/py_sift_intro.html">opencv-python-tutroals</a> <br>
-            <a class="font-initial" href="https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf">Research Paper </a> <br>
-            <a class="font-initial" href="https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/">detailed-guide-powerful-sift-technique-image-matching-python</a> <br>
-            <a class="font-initial" href="https://medium.com/data-breach/introduction-to-sift-scale-invariant-feature-transform-65d7f3a72d40">introduction-to-sift-scale-invariant-feature-transform</a> <br>
-            <a class="font-initial" href="https://www.youtube.com/watch?v=wpyGaQtRVz4">SIFT</a>
+            <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_sift_intro/py_sift_intro.html" style="font-size: 16px;">opencv-python-tutroals</a> <br>
+            <a href="https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf" style="font-size: 16px;">Research Paper </a> <br>
+            <a href="https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/" style="font-size: 16px;">detailed-guide-powerful-sift-technique-image-matching-python</a> <br>
+            <a href="https://medium.com/data-breach/introduction-to-sift-scale-invariant-feature-transform-65d7f3a72d40" style="font-size: 16px;">introduction-to-sift-scale-invariant-feature-transform</a> <br>
+            <a href="https://www.youtube.com/watch?v=wpyGaQtRVz4" style="font-size: 16px;">SIFT</a>
             
             
             

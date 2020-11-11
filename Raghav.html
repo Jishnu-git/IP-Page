@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -63,16 +62,45 @@
         <h2 class="text-center py-4 bg-green">Completed Work</h2>
         <p class="py-4">
             In the field of Image Processing, there are various edge detecting techniques. As of now I have worked on the Canny Edge Detector which is multi-step algorithm to detect edges in images. Pre-processing techniques will be applied for an effective output.
-            
+           <small><center><h3>Steps Involved in Canny Edge Detector</h3></center></small>
+           <center><p>(1) Noise Reduction</p></center>
+           <p>One way to get rid of the noise on the image, is by applying Gaussian blur to smooth it. To do so, image convolution technique is applied with a Gaussian Kernel (3x3, 5x5, 7x7 etc…). The kernel size depends on the expected blurring effect. Basically, the smallest the kernel, the less visible is the blur. In our example, we will use a 5 by 5 Gaussian kernel.</p>
+            <center></p>(2) Applying Sobel Filter</p></center>
+            <p>The Gradient calculation step detects the edge intensity and direction by calculating the gradient of the image using edge detection operators.
+                Edges correspond to a change of pixels’ intensity. To detect it, the easiest way is to apply filters that highlight this intensity change in both directions: horizontal (x) and vertical (y)
+                When the image is smoothed, the derivatives Ix and Iy w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels Kx and Ky</p>
+            <center></p>(3) Non-Maximum Supression</p></center>
+            <p>Non Maximum Suppression (NMS) is a technique used in many computer vision algorithms. It is a class of algorithms to select one entity (e.g. bounding boxes) out of many overlapping entities.</p>
+            <center></p>(4) Double Threshold</p></center>
+            <p>An image processing method that creates a bitonal (aka binary) image based on setting a threshold value on the pixel intensity of the original image. The thresholding process is sometimes described as separating an image into foreground values (black) and background values (white).</p>
+            <center></p>(5) Edge Tracking By Hysteresis</p></center>
+            <p>Based on the threshold results, the hysteresis consists of transforming weak pixels into strong ones, if and only if at least one of the pixels around the one being processed is a strong one</p>
+           <center><div class="row">
+                <div class="col-6">
+                    <img class="sample-img" src="Images/Raghav/messi.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="sample-img" src="Images/Raghav/Canny_Edge.png" alt="">
+                </div>
+            </div></center>
+            <div class="col-12 text-center">
+                <p>(A)Original Image (B)Result of Canny Edge Detector</p>
+                <p><a href="https://github.com/Ragz0125/Canny-Edge-Detector/blob/main/Canny_Edge_Detector.ipynb">Click Here For Code</a></p>
+            </div>
+            <small><center><h5>Canny Edge Detector Improvised</h5></center></small>
+            <p>Canny edge Detector can be improved by feeding the edge image into the Hough Transform.</p>
+            <p>The Hough transform takes a binary edge map as input and attempts to locate edges placed as straight lines. The idea of the Hough transform is, that every edge point in the edge map is transformed to all possible lines that could pass through that point.</p>
+            <img class="sample-img" src="Images/Raghav/hough_space.png" alt="">
+            <center><p><a href="https://github.com/Ragz0125/Canny-Edge-Detector/blob/main/Canny%20Edge%20Detector(Improvised).ipynb">Click Here For Code</a></p></center>
         </p>
         <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
         <p class="py-4">
-            After building the Canny Edge Detector Algorithm, further research on the drawbacks will be made and pre-processing techniques will be figured out. The final algorithm involves the comparison of images to show the difference in edges which were pre-processed and images which were not pre-processed .
+            After building the Canny Edge Detector Algorithm and implementing the same, further research was made on the problem of the algorithm. The canny can be improved by joining the edge pixels by Hough Transform. Further research is being done on how to implement Hough Transform on Canny Edge Detector. 
         </p>
         <h2 class="text-center py-4 bg-green">References</h2>
         <div class="text-center">
             <a href="https://www.researchgate.net/publication/224377985_A_Computational_Approach_To_Edge_Detection">Canny Edge Detector Paper</a> <br>
-            <a href="https://medium.com/@hbyacademic/otsu-thresholding-4337710dc519">OTSU Menthod</a> <br>
+            <a href="https://towardsdatascience.com/lines-detection-with-hough-transform-84020b3b1549">Hough Transform</a> <br>
         </div>
     </div>
 </body>
