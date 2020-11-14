@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokul</title>
+ 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -20,15 +20,15 @@
                 Other Members
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Jishnu.html">Jishnu</a>
-                <a class="dropdown-item" href="Adityan.html">Adityan Sunil</a>
-                <a class="dropdown-item" href="Harshaan.html">Harshaan</a>
-                <a class="dropdown-item" href="Alan.html">Alan Jeremiah</a>
-                <a class="dropdown-item" href="Sarchin.html">Sarchin</a>
-                <a class="dropdown-item" href="Divya.html">Divya Prackash</a>
-                <a class="dropdown-item" href="Raghav.html">Raghav</a>
-                <a class="dropdown-item" href="Pranav.html">Pranav</a>
-                <a class="dropdown-item" href="Shreyas.html">Shreyas</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
+                <a class="dropdown-item" href="#">Developer</a>
               </div>
             </li>
           </ul>
@@ -46,10 +46,10 @@
                     <strong>Email: </strong> gokulkrishna.r.2000@gmail.com
                 </div>
                 <div class="col-6 text-center mt-3">
-                    <strong>Github: </strong> <a href="https://github.com/gokulchamp">gokulchamp</a>
+                    <strong>Github: </strong> <a href="https://github.com/gokulchamp">github repo</a>
                 </div>
                 
-                <div class="col-12 text-center my-3">
+                <div class="col-6 text-center my-3">
                     <strong>Linkedin: </strong> <a href="https://www.linkedin.com/in/gokul-krishna-r/">Gokul-krishna</a>
                 </div>
             </div>
@@ -60,53 +60,75 @@
             Object detection just finds the object and gives the locality of that object, but this is not very useful when shape is
             required for the classification or identification, so we use segmentation which gives granular understanding the object.
             So we are performing image segmentation using contours detection. <br>
-            Contour detection is not the only algorithm for image segmentation though, there are a lot others, such as semantic
-            segmentation, Hough transform and K-Means segmentation.
-
-
-
+            
         </p>
         <h2 class="text-center py-4 bg-green">Completed Work</h2>
         <p class="py-4">
         A contour is a closed curve joining all the continuous points having some colour or intensity, they represent the shapes
-        of objects found in an image. Contour detection is a useful technique for shape analysis and object detection and
-        recognitionThe output of image after segmentation is an image that is divided into multiple parts by contours. <br>
+        of objects found in an image. <br>
 
         
             Contour detection is a major issue in image processing. This problem is strongly related to the detection of the
             connected contours separating these parts. It is quite easy to detect edges using local image analysis techniques, but
             the detection of continuous contours is more complicated and needs a global analysis of the image.
-            Therefore, there have been many studies on contour-tracing algorithms for extracting and tracing the contour of an
-            object. Most of the algorithms are binary image-based contour-tracing algorithms which trace contours on digitized black
-            and white images taken from various image sensors.
-        
+            
+       
         The conventional contour algorithms can typically be categorized into three types as follows: <br>
-            • pixel following, <br>
-            • vertex following <br>
-            • run-data-based following. <br>
-        
+            1.pixel following, <br>
+			The pixel-following method traces contour pixels in a predefined manner and then saves their coordinates in memory according to the trace order<br><br>
+			<img src="Images/gokul/pixel.jpeg"><br><br>
+			pixel following method has 4 different algorithms: square tracing ,moore neighbor tracing,Radial sweep,theo pavlidis algorithm<br>
+			
+			
+            2.vertex following <br> 
+			The vertex-following method traces the vertices of the contour pixels that are located on the edges between the contour pixels and the background pixels<br><br>
+			<img src="Images/gokul/vertex.jpeg"><br><br>
+			
+			
+            3.run-data-based following. <br>
+			The run-data-based following method, which involves the edge-point tracing of run data , uses run data in pairs consisting of an object’s left and right edges, which are obtained using horizontal scan lines from left to right on an image. additive operation is performed  for calculating the relationship between adjacent run-data horizontally.<br><br>
+			
+			<img src="Images/gokul/run-data.jpeg"><br><br>
+
+			
+			
+			
+			This method is slower compared to other 2 methods ,but it is more accurate  ,also this is the most data efficient compared to vertex and pixel following method.<br>
+			<br>
+			opencv has method called "findcontours" ,it is based on run data flow algorithm and also it uses moore neighbor tracing algorithm to find the boundary
+        <br>
         
         Brief Study on the conventional contour tracing algorithms is completed. <br>
-        Implemented segmentation using contours  on pre-processed and non pre processed images and comparing results .
+        Implemented segmentation using contours  on simple threshold image and and on image whith edge detection performed and comparing results .
 
 
         </p>
-        <h2 class="text-center py-4 bg-green">Ongoing Work</h2>
+        <h2 class="text-center py-4 bg-green">Results</h2>
         <p class="py-4">
 
-        • exploring active contours and how it can be used in medical field <br>
-        • Working with Fast Contour-Tracing Algorithm Based on a Pixel-Following Method for Image Sensors(for low power devices) <br>
-        • Exploring how to perform shape analysis after segmentation <br>
-
-
-
+        • when we try to find image contours from a non pre-processed binary  image we find that there is lot of noise in the image whch hampers the resulting bounding contour but when we perform gaussian blur ,the noise is removed to produce a smoother bounding curve<br>
+		• The image after performing edge detection gave better results than the image with simple thresholding.<br>
+        • also using morphological transformation ,erode(min neighbor) we find that the some of the broken edges are conncected which further increases the accuracy of the tracing algorithm<br>
+         <br><br><br>
+		
+		•Result after simple threshold <br>
+		<img src="Images/gokul/Threshold.jpeg">
+		<br>
+		• Result after canny edege detection<br>
+		<img src="Images/gokul/canny.jpeg"><br>
+		
+		The code for the implemntation can be found <a href ="https://github.com/gokulchamp/IP">here</a><br>
+		
         </p>
+		
+		
         <h2 class="text-center py-4 bg-green">References</h2>
         <div class="text-center">
+			
             <a href=" https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_contours/py_contours_begin/py_contours_begin.html#contours-getting-started">opencv_docs-contours</a><br>
             <a href=" https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813928/#:~:text=Contour%20pixels%20distinguish%20objects%20from,and%20useful%20for%20detecting%20objects.&text=The%20proposed%20algorithm%20classifies%20the,based%20on%20its%20local%20pattern.">Contour-Tracing-algorithms</a> <br>
             <a href=" https://www.thepythoncode.com/article/contour-detection-opencv-python">Implementation-reference</a> <br>
-            <a href=" https://www.intechopen.com/books/medical-and-biological-image-analysis/active-contour-based-segmentation-techniques-for-medical-image-analysis">Active contours </a> <br>
+			<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4813928/#:~:text=Contour%20pixels%20distinguish%20objects%20from,and%20useful%20for%20detecting%20objects.&text=The%20proposed%20algorithm%20classifies%20the,based%20on%20its%20local%20pattern.">contour tracing algorithms paper</a><br>
             <br><br>
         </div>
 
